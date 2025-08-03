@@ -16,13 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from library.views import home_view, dashboard
-from django.contrib.auth import views as auth_views
+from library.swagger import urlpatterns as swagger_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name='home'),
-    path('dashboard/', dashboard, name='dashboard'),
     path('api/', include('library.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),  # Includes login/logout/password reset/etc.
+ 
 ]
+
+urlpatterns += swagger_urls
+

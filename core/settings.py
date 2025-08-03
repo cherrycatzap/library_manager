@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'corsheaders',             # For CORS
     'library',
     'django_bootstrap5',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
