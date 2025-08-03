@@ -1,29 +1,32 @@
-# Library Management System
+📚 Library Management System
+A web-based backend system built using Django and Django REST Framework to manage books, authors, and borrowing records in a library, complete with asynchronous report generation and real-time inventory tracking.
 
-A web-based system built using Django and Django REST Framework to manage books, authors, and borrowing records in a library.
+🔑 Features
+✅ Full CRUD for Books, Authors, and Borrowings
+📄 Auto-generated API Documentation using Swagger UI (drf-yasg)
+⏱️ Asynchronous JSON report generation (borrowing statistics & library metrics) using Celery
+📊 Background tasks handled with Redis, enabling real-time insights
+📦 Automated inventory management – borrowing updates stock in real-time
+🔐 Token-based Authentication (optional for protected routes)
+🧠 Scalable, modular architecture – easy to plug in pagination, filters, search, and more
+🧪 Built with a three-model schema to ensure relational consistency and data integrity
 
-## Features
+🛠️ Technologies Used
+Python 3.x
 
-- ✅ CRUD operations for Books, Authors, and Borrowings
-- 📄 API Documentation with Swagger UI
-- ⏱️ Asynchronous JSON report generation using Celery
-- 🧠 Background task handling with Redis
-- 🔐 Token-based Authentication (optional for protected routes)
+Django
 
-## Technologies Used
+Django REST Framework
 
-- Python 3.x
-- Django
-- Django REST Framework
-- Celery + Redis
-- drf-yasg (Swagger)
-- SQLite (default, replaceable with PostgreSQL/MySQL)
+Celery + Redis
 
-## Setup Instructions
+drf-yasg (Swagger for API docs)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/library_manager.git
-   cd library_manager
+SQLite (default, easily switchable to PostgreSQL/MySQL)
 
-
+🚀 Setup Instructions
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/library_manager.git
+cd library_manager
